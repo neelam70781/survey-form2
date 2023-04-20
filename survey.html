@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey form</title>
+        <style>
+            .container {
+                position: absolute;
+                margin: auto;
+                display:grid; 
+                width: 30%;
+                height: 50%;
+                left: 0; right: 0;
+                top: 0; bottom: 0;
+            }
+            .left {
+                display: grid;
+                grid-template-columns: 35% 65%;
+            }
+            .left label {
+                font-weight: bold;
+            }
+            .left input {
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 10px;
+                border: 2px solid rgba(255, 255, 255, 0.5);
+                height: 20px;
+            }
+            .left select {
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 10px;
+                border: 2px solid rgba(255, 255, 255, 0.5);
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: rgb(178, 157, 140);">
+        <h1 style="font-size: 50px; text-align: center;">SURVEY FORM</h1>
+        <div class="container">
+            <div class="left">
+                <label>Name: </label>
+                <div>
+                    <input style="margin-right: 3%; width: 45%;" type="text" placeholder="First name">
+                    <input style="width: 45%;" type="text" placeholder="Last name">
+                </div>
+            </div>
+            <div class="left" style="margin-bottom: 2%;">
+                <label>Address: </label>
+                <div style="display: grid;">
+                    <input type="text" placeholder="Street">
+                    <input type="text" placeholder="City">
+                    <input type="text" placeholder="State">
+                    <input type="text" placeholder="Pincode">
+                </div>
+            </div>
+            <div class="left">
+                <label>Mobile Number: </label>
+                <input type="text" placeholder="Mobile number">
+            </div>
+            <h2 style="margin: 1% 0 1% 0;" >Rating</h3>
+            <div class="left">
+                <label>Quality of product: </label>
+                <select name="quality" id="quality">
+                    <option value="1">Excellent</option>
+                    <option value="2">Good</option>
+                    <option value="3">Bad</option>
+                </select>
+            </div>
+            <div class="left">
+                <label>Value of Money: </label>
+                <select name="money" id="quality">
+                    <option value="1">Excellent</option>
+                    <option value="2">Good</option>
+                    <option value="3">Bad</option>
+                </select>
+            </div>
+            <div class="left">
+                <label>Delivery: </label>
+                <select name="delivery" id="quality">
+                    <option value="1">Excellent</option>
+                    <option value="2">Good</option>
+                    <option value="3">Bad</option>
+                </select>
+            </div>
+        </div>
+    </body>
+</html>
